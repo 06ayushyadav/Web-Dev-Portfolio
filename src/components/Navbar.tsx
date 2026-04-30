@@ -61,7 +61,7 @@ const Navbar = () => {
               href={`#${item}`}
               className={`relative capitalize transition ${
                 active === item
-                  ? "text-purple-500 bg-black"
+                  ? "text-purple-500"
                   : "text-white/70 hover:text-white"
               }`}
             >
