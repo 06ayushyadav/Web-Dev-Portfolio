@@ -61,13 +61,13 @@ const Navbar = () => {
               href={`#${item}`}
               className={`relative capitalize transition ${
                 active === item
-                  ? "text-purple-500"
+                  ? "text-purple-500 bg-black"
                   : "text-white/70 hover:text-white"
               }`}
             >
               {item}
               <span
-                className={`absolute left-0 -bottom-1 h-0.5 bg-purple-500 transition-all duration-300 ${
+                className={`absolute left-0 -bottom-1 h-0.5 bg-purple-500   transition-all duration-300 ${
                   active === item ? "w-full" : "w-0"
                 }`}
               />
@@ -87,7 +87,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl flex flex-col">
+        <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl  flex flex-col">
 
           <div className="flex justify-between items-center px-4 sm:px-6 py-4 border-b border-white/10">
             <h2 className="text-lg sm:text-xl font-semibold">
@@ -100,16 +100,16 @@ const Navbar = () => {
             <FaXmark onClick={() => setOpen(false)} size={26} />
           </div>
 
-          <div className="flex-1 flex flex-col justify-center items-center gap-6 sm:gap-8 text-xl sm:text-2xl font-medium px-4">
+          <div className="flex-1 flex flex-col justify-center items-center gap-6 sm:gap-8 text-xl sm:text-2xl font-medium  bg-black/40 p-10">
 
             {links.map((item, index) => (
               <a
                 key={item}
                 href={`#${item}`}
                 onClick={() => setOpen(false)}
-                className={`w-full max-w-xs text-center py-3 rounded-xl border border-white/10 backdrop-blur-md transition duration-300 ${
+                className={`w-full max-w-xs text-center py-3 rounded-xl border bg-black  border-white/10 backdrop-blur-md transition duration-300 ${
                   active === item
-                    ? "text-purple-500 bg-purple-500/10"
+                    ? " bg-purple-500"
                     : "text-white/80 hover:bg-white/5"
                 }`}
                 style={{
@@ -117,7 +117,7 @@ const Navbar = () => {
                   animationDelay: `${index * 0.08}s`,
                 }}
               >
-                {item}
+                {item.charAt(0).toUpperCase() + item.slice(1).toLowerCase()}
               </a>
             ))}
           </div>
