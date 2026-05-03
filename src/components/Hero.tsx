@@ -3,6 +3,8 @@
 import { motion } from "framer-motion"
 import { assets } from "../assets/assets"
 import Image from "next/image"
+import { FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhone } from "react-icons/fa"
+
 
 const Hero = () => {
     return (
@@ -39,7 +41,12 @@ const Hero = () => {
                             />
                         </motion.div>
                     </div>
+
+
                 </motion.div>
+
+                
+                
 
                 {/* TEXT */}
                 <motion.div
@@ -54,7 +61,7 @@ const Hero = () => {
 
                     {/* TYPEWRITER FIX */}
                     <h2 className="typewriter text-xl sm:text-2xl md:text-3xl font-semibold mt-4 mb-6 text-gray-300 ">
-                    
+
                         Full Stack Developer
                     </h2>
 
@@ -83,9 +90,11 @@ const Hero = () => {
                     </div>
                 </motion.div>
 
+
             </div>
         </section>
     )
 }
 
 export default Hero
+

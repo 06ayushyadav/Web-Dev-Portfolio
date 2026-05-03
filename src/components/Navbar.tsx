@@ -46,7 +46,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
 
-        <a href="#home" className="flex items-center gap-1 text-lg sm:text-xl font-bold">
+        <a href="#home" className="flex items-center gap-1 text-xl sm:text-2xl font-bold">
           <span className="text-gray-400">&lt;/</span>
           <span className="text-white">Ayush</span>
           <span className="text-purple-500">Yadav</span>
@@ -85,12 +85,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {open && (
-        <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl  flex flex-col">
 
-          <div className="flex justify-between items-center px-4 sm:px-6 py-4 border-b border-white/10">
-            <h2 className="text-lg sm:text-xl font-semibold">
+      {open && (
+        <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-2xl flex flex-col">
+
+          <div className="flex justify-between items-center px-4 sm:px-6 py-4 pb-1.5 border-b border-white/10">
+            <h2 className="text-xl sm:text-2xl font-semibold">
               <span className="text-gray-400">&lt;/</span>
               <span className="text-white">Ayush</span>
               <span className="text-purple-500">Yadav</span>
@@ -100,14 +100,14 @@ const Navbar = () => {
             <FaXmark onClick={() => setOpen(false)} size={26} />
           </div>
 
-          <div className="flex-1 flex flex-col justify-center items-center gap-6 sm:gap-8 text-xl sm:text-2xl font-medium  bg-black/40 p-10">
+          <div className="flex-1 flex flex-col justify-center items-center gap-6 sm:gap-8 text-xl sm:text-2xl font-medium  bg-black/95  p-10">
 
             {links.map((item, index) => (
               <a
                 key={item}
                 href={`#${item}`}
                 onClick={() => setOpen(false)}
-                className={`w-full max-w-xs text-center py-3 rounded-xl border bg-black  border-white/10 backdrop-blur-md transition duration-300 ${
+                className={`w-full max-w-xs text-center py-3 rounded-xl border bg-black  border-white/60 backdrop-blur-md transition duration-300 ${
                   active === item
                     ? " bg-purple-500"
                     : "text-white/80 hover:bg-white/5"

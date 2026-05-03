@@ -71,35 +71,35 @@ const Contact = () => {
                     </div>
 
                     <div className="space-y-8">
-                        <div className="flex items-start">
+                        <div className="flex items-start text-sm sm:text-lg ">
                             <div className="text-purple text-2xl mr-4">
                                 <FaMapMarkerAlt />
 
                             </div>
                             <div>
-                                <h3 className="text-lg font-semibold mb-2">Location</h3>
+                                <h3 className="text-lg font-semibold mb-2 ">Location</h3>
                                 <p className="text-gray-400">Kurla (West) , Mumbai , Maharashtra , Pin : 400070</p>
                             </div>
 
                         </div>
-                        <div className="flex items-start">
+                        <div className="flex items-start text-sm sm:text-lg ">
                             <div className="text-purple text-2xl mr-4">
                                 <FaEnvelope />
 
                             </div>
-                            <div>
-                                <h3 className="text-lg font-semibold mb-2">Email Address</h3>
+                            <div >
+                                <h3 className="font-semibold mb-2">Email Address</h3>
                                 <p className="text-gray-400">yayush1034@gmail.com</p>
                             </div>
 
                         </div>
-                        <div className="flex items-start">
+                        <div className="flex items-start text-sm sm:text-lg ">
                             <div className="text-purple text-2xl mr-4">
                                 <FaPhone />
 
                             </div>
                             <div>
-                                <h3 className="text-lg font-semibold mb-2">Whatsapp Number</h3>
+                                <h3 className=" font-semibold mb-2 text-sm sm:text-lg">Whatsapp Number</h3>
                                 <p className="text-gray-400">9820163367</p>
                             </div>
 
