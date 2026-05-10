@@ -3,7 +3,8 @@
 import { motion } from "framer-motion"
 import { assets } from "../assets/assets"
 import Image from "next/image"
-import { FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhone } from "react-icons/fa"
+import { FaDownload, FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhone } from "react-icons/fa"
+import { FaDownLong } from "react-icons/fa6"
 
 
 const Hero = () => {
@@ -45,8 +46,8 @@ const Hero = () => {
 
                 </motion.div>
 
-                
-                
+
+
 
                 {/* TEXT */}
                 <motion.div
@@ -75,14 +76,22 @@ const Hero = () => {
 
                         <a
                             href="#projects"
-                            className="px-6 py-3 bg-purple-500 rounded-lg font-medium hover:bg-purple-600 transition shadow-lg shadow-purple-500/20"
+                            className="px-6 py-3 bg-purple-600 rounded-lg font-medium hover:bg-purple-800 transition shadow-lg shadow-purple-500/20"
                         >
                             View Work
                         </a>
 
                         <a
+                            href="/Ayush_Yadav_Resume.pdf"
+                            download
+                            className="inline-flex justify-center items-center gap-2 px-6 py-3 bg-purple-600  text-white font-medium rounded-lg hover:bg-purple-800 transition duration-300"
+                        >
+                            <FaDownload /> Download CV
+                        </a>
+
+                        <a
                             href="#contact"
-                            className="px-6 py-3 border border-purple-500 rounded-lg font-medium hover:bg-purple-500/20 transition"
+                            className="px-6 py-3 border border-purple-600 rounded-lg font-medium hover:bg-purple-500/20 transition"
                         >
                             Contact Me
                         </a>
